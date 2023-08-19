@@ -13,7 +13,7 @@ def home(request):
     """
 
     # get the template name
-    template = "pull/home.html"
+    template = "chat/home.html"
     # set the title
     title = "Home"
     # create the context
@@ -28,7 +28,7 @@ def about(request):
     """
 
     # get the template name
-    template = "pull/about.html"
+    template = "chat/about.html"
     # get the title
     title = "About"
     # create the context
