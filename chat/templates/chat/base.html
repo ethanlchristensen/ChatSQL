@@ -20,7 +20,7 @@
   {% if title %}
   <title>ChatSQL - {{ title }}</title>
   {% else %}
-  <title>DCISP</title>
+  <title>Chat SQL</title>
   {% endif %}
 </head>
 
@@ -34,8 +34,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarToggle">
           <div class="navbar-nav me-auto">
-            <a class="nav-item nav-link{% if i_am == 'home' %} active{% endif %}" href="{% url 'chat-home' %}">Home</a>
-            <a class="nav-item nav-link{% if i_am == 'about' %} active{% endif %}" href="{% url 'chat-about' %}">About</a>
+            <a class="nav-item nav-link{% if i_am == 'home' %} active{% endif %}" href="{% url 'chat-sql-home' %}">ChatSQL</a>
+            <a class="nav-item nav-link{% if i_am == 'about' %} active{% endif %}" href="{% url 'chat-sql-about' %}">About</a>
           </div>
           <!-- Navbar Right Side -->
           <div class="navbar-nav">

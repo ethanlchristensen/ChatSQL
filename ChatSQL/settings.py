@@ -145,6 +145,4 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.environ.get("EMAIL_USER")
 EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_PASSWORD")
 
-DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
 DJANGO_TABLES2_TEMPLATE = "django_tables2/bootstrap5-responsive.html"
