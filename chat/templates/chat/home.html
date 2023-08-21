@@ -1,0 +1,34 @@
+{% extends "chat/base.html" %}
+{% load crispy_forms_tags %}
+{% block scripts %}
+    <script>
+        $('#myBtn').click(function () {
+            $('#loader').attr('class', 'fa fa-spinner fa-spin mr-2');
+        });
+    </script>
+{% endblock scripts %}
+{% block content %}
+    <div class="home">
+        {% if SQL %}
+            <div class="code">
+        <pre>
+            <code class="language-sql">
+                {{ SQL }}
+            </code>
+        </pre>
+            </div>
+        {% endif %}
+        <div class="query">
+            <form action="{% url 'chat-sql-home' %}" method="POST">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div class="form-group">
+                    <button class="btn btn-outline-success" type="submit">Update Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+        <h1>YOUR QUERY: <span>{{ query }}</span></h1>
+    </div>
+{% endblock content %}

@@ -1,4 +1,4 @@
-{% extends "pull/base.html" %}
+{% extends "chat/base.html" %}
 {% block content %}
 <body>
     <h2>You have been logged out</h2>
@@ -7,7 +7,7 @@
             Already Have An Account? <a class="a-login" href="{% url 'login' %}">Login</a>
         </small>
         <small>
-            Welcome Page <a class="a-welcome" href="{% url 'pull-home' %}">Welcome</a>
+            Welcome Page <a class="a-welcome" href="{% url 'chat-home' %}">Welcome</a>
         </small>
     </div>
 </body>

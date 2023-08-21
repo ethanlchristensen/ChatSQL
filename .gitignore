@@ -165,3 +165,4 @@ RECAP_JSON/
 RECAP_DEBUG/
 poetry.lock
 *.ico
+.idea/
