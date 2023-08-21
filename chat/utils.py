@@ -10,10 +10,10 @@ class OpenAIPrompter:
         completion = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "You are a robot that is trained to only respond on SQL queries based"
-                                              "on the query the user gives to you. The user needs assistance writing"
+                {"role": "system", "content": "You are a robot that is trained to only respond in SQL queries based"
+                                              "on the request the user gives to you. The user needs assistance writing"
                                               "SQL queries. Generally these involve updating existing rows or adding"
-                                              "now rows."},
+                                              "new rows."},
                 {"role": "user", "content": prompt}
             ],
             max_tokens=400
